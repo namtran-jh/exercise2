@@ -1,0 +1,147 @@
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+
+/* Header */
+
+.header {
+    position: relative;
+    color: white;
+}
+
+.img-headerBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#text-decor-direc {
+    direction: rlt;
+    unicode-bidi: bidi-override;
+    color: #ff6b00;
+}
+
+.header h1 {
+    font-size: 26px;
+}
+
+.header hr {
+    width: 10px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+hr.bright-line {
+    background-color: white;
+}
+
+.arrow-link {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+}
+
+.arrow-down {
+    background: transparent url("./images/arrow-down-white.png") center no-repeat;
+}
+
+.arrow-down:hover {
+    background: url("./images/arrow-down-orange.png") center no-repeat;
+}
+
+.arrow-right {
+    background: transparent url("./images/arrow-right-white.png") center no-repeat;
+}
+
+.arrow-right:hover {
+    background: url("./images/arrow-right-orange.png") center no-repeat;
+}
+
+.header-bottom {
+    display: block;
+}
+
+.img-header {
+    width: 100%;
+}
+
+.header-body div {
+    width: 100%;
+    padding: 20px;
+    background-color: #ff6b00;
+}
+
+.header-body div h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header-body div p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header-bottom {
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.header-bottom h2 {
+    font-size: 18px;
+    padding: 0px 20px;
+}
+
+.header-bottom p {
+    font-size: 12px;
+}
+
+.header-bottom div {
+    font-size: 10px;
+    color: rgb(190, 190, 190);
+    padding: 0px 30px;
+}
+
+.header-bottom div img {
+    width: 10px;
+}
+
+.header-bottom div p {
+    text-decoration: underline;
+}
+
+.header-content {
+    padding: 10px;
+    margin: 10px 0px;
+    color: black;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 20px;
+}
+
+.header-content-detail p {
+    font-size: 8px;
+    margin: 5px 0px;
+}
