@@ -62,19 +62,19 @@ hr.bright-line {
 }
 
 .arrow-down {
-    background: transparent url("./images/arrow-down-white.png") center no-repeat;
+    background: transparent url("../images/arrow-down-white.png") center no-repeat;
 }
 
 .arrow-down:hover {
-    background: url("./images/arrow-down-orange.png") center no-repeat;
+    background: url("../images/arrow-down-orange.png") center no-repeat;
 }
 
 .arrow-right {
-    background: transparent url("./images/arrow-right-white.png") center no-repeat;
+    background: transparent url("../images/arrow-right-white.png") center no-repeat;
 }
 
 .arrow-right:hover {
-    background: url("./images/arrow-right-orange.png") center no-repeat;
+    background: url("../images/arrow-right-orange.png") center no-repeat;
 }
 
 .header-bottom {
