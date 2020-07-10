@@ -2,12 +2,52 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
-[class*="col-"] {
-    width: 100%;
+.col-1 {
+    width: 8.33%;
 }
 
-.col-sm-6 {
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
     width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
 }
 
 
@@ -16,6 +56,7 @@ html {
 .header {
     position: relative;
     color: white;
+    height: 600px;
 }
 
 .img-headerBackground {
@@ -23,43 +64,37 @@ html {
     top: 0;
     left: 0;
     z-index: -1;
+    height: 100%;
 }
 
 .navbar {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+.nav li:hover {
+    border-bottom: 3px solid #ff6b00;
+    cursor: pointer;
+}
+
+.navbar p {
+    transform: rotate(90deg);
+    padding: 20px 0px;
 }
 
 .navbar-mobile {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(70, 70, 70);
-    color: white;
-    padding: 10px 15px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.menu-nav {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(36, 36, 36);
-}
-
-.menu-nav li {
-    padding: 15px 10px;
-    font-size: 12px;
-}
-
-.menu-nav li:hover {
-    background-color: white;
-    color: rgb(36, 36, 36)
-}
-
-.menu-icon:hover~.menu-nav {
-    display: block;
 }
 
 #text-decor-direc {
@@ -75,23 +110,26 @@ html {
 }
 
 .header-main {
-    margin: 30px 0px 0px;
-    text-align: center;
+    margin-top: 50px;
+    padding-left: 40px;
+    width: 500px;
+    text-align: left;
 }
 
 .header-main h1 {
-    font-size: 24px;
-    font-weight: 800;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .header-main h4 {
-    padding: 10px 80px;
-    font-size: 12px;
+    padding: 10px 10px 10px 0px;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .header hr {
-    width: 30px;
-    margin: 10px 0px;
+    width: 50px;
+    margin: 20px 0px;
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
     display: inline-block;
@@ -99,116 +137,118 @@ html {
 
 hr.bright-line {
     background-color: white;
+    display: block;
 }
 
 .arrow-link {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 0px 50px 30px;
+    justify-content: flex-start;
+    padding: 0px 30px 30px;
     margin-bottom: 50px;
 }
 
 .arrow {
-    height: 20px;
-    width: 20px;
-    margin: 5px;
+    height: 30px;
+    width: 30px;
+    margin: 5px 10px 5px 0px;
 }
 
 .arrow-down {
     background: url("../images/arrow-down-white.png") center no-repeat;
-    background-size: 20px;
+    background-size: 30px;
 }
 
 .arrow-down:hover {
     background: url("../images/arrow-down-orange.png") center no-repeat;
-    background-size: 20px;
+    background-size: 30px;
 }
 
 .arrow-right {
     background: url("../images/arrow-right-orange.png") center no-repeat;
-    background-size: 20px;
+    background-size: 30px;
 }
 
 .arrow-right:hover {
     background: url("../images/arrow-right-white.png") center no-repeat;
-    background-size: 20px;
+    background-size: 30px;
 }
 
 .header-bottom {
     display: block;
 }
 
-.img-header {
-    width: 450px;
-}
-
 .header-body {
+    padding: 150px 0px 0px 600px;
     display: flex;
-    position: static;
+    flex-direction: row-reverse;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     font-size: 0;
+    z-index: -1;
 }
 
 .header-body div {
-    padding: 10px;
-    padding-left: 25px;
+    padding: 25px;
     background-color: #ff6b00;
-    direction: rtl;
     text-align: justify;
-    float: right
+    float: unset;
+    direction: unset;
 }
 
 .header-body div h2 {
-    font-size: 18px;
-    font-weight: 600;
-    text-align: right;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
 }
 
 .header-body div p {
-    font-size: 10px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
     padding-top: 5px;
 }
 
 .header-bottom {
-    margin: 10px 0px;
-    padding: 10px 50px;
-    text-align: center;
+    margin: 0px;
+    padding: 0px 0px 10px 600px;
+    text-align: left;
     color: black;
+    font-size: 0;
 }
 
 .block {
-    display: none;
+    background-color: #ff6b00;
+    display: inline-block;
+    height: 180px;
 }
 
 .header-bottom-detail h2 {
-    font-size: 18px;
+    font-size: 28px;
     margin-bottom: 5px;
 }
 
 .header-bottom-detail h2 br {
-    display: none;
+    display: inline-block;
 }
 
 .header-bottom-detail p {
-    font-size: 10px;
+    font-size: 18px;
     color: rgb(190, 190, 190);
-    padding: 0px 20px;
+    padding: 0px;
     margin-bottom: 5px;
 }
 
 .header-bottom-detail {
     font-size: 10px;
-    color: rgb(190, 190, 190);
-    padding: 0px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: black;
+    padding: 0px 80px 0px 30px;
+    display: inline-block;
 }
 
 .header-bottom-detail div {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -224,21 +264,22 @@ hr.bright-line {
 }
 
 .header-content {
-    padding: 10px;
+    padding: 10px 200px;
     margin: 10px 0px;
     color: black;
-    text-align: center;
+    text-align: left;
 }
 
 .header-content h2 {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 5px;
+    padding-left: 10px;
 }
 
 .header-content-detail {
     font-size: 0;
-    padding: 0px 10px;
+    padding: 0px;
 }
 
 .header-content-detail>div {
@@ -247,10 +288,11 @@ hr.bright-line {
 }
 
 .header-content-detail p {
-    font-size: 8px;
-    margin: 5px 0px;
+    font-size: 20px;
+    margin: 10px 0px;
     text-align: justify;
     padding: 0px 10px;
+    color: rgb(190, 190, 190);
 }
 
 
@@ -258,41 +300,43 @@ hr.bright-line {
 
 .body {
     position: relative;
-    height: 330px;
+    height: 975px;
 }
 
 .img-bodyBackground {
     position: absolute;
     top: 0;
     z-index: -1;
-    height: 330px;
+    height: 100%;
 }
 
 .body-body {
     position: absolute;
     bottom: 0;
-    left: 40px;
+    left: 100px;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 50px 0px 0px 200px;
 }
 
 .img-body {
-    width: 150px;
+    width: 30%;
 }
 
 .body-body h2 {
-    width: 100px;
+    width: unset;
     word-wrap: break-word;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 400;
     color: white;
     background-color: #ff6b00;
-    padding: 20px 10px 0px;
+    padding: 20px 20px 0px;
 }
 
 .body-content {
-    margin-left: 40px;
-    padding: 10px;
+    margin-left: 300px;
+    padding: 20px;
     background-color: #ff6b00;
     font-size: 0;
 }
@@ -303,42 +347,42 @@ hr.bright-line {
 }
 
 .body-content p {
-    padding: 5px 10px;
+    padding: 10px 15px;
     text-align: justify;
-    font-size: 10px;
+    font-size: 18px;
     color: white;
 }
 
 .body-form {
-    margin-left: 40px;
-    padding: 10px;
+    margin-left: 300px;
+    padding: 20px;
     background-color: rgb(70, 70, 70);
     color: white;
 }
 
 .body-form h2 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-left: 5px;
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 10px;
 }
 
 .body-form form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     margin: 5px 0px;
 }
 
 .body-form form input {
-    width: auto;
-    font-size: 12px;
-    margin: 2px 30px 2px 5px;
-    padding: 5px;
+    width: unset;
+    font-size: 20px;
+    margin: 2px 10px 2px 5px;
+    padding: 10px;
     text-align: left;
 }
 
 input[type="button"] {
-    width: 100px !important;
+    width: 150px;
     color: white;
     background-color: rgb(70, 70, 70);
     border: 1px solid white;
@@ -346,13 +390,13 @@ input[type="button"] {
 }
 
 .body-bottom {
-    margin-left: 40px;
-    height: 350px;
+    margin-left: 300px;
+    height: 400px;
     position: relative;
 }
 
 .img-bodyBottom {
-    height: 350px;
+    height: 100%;
     position: absolute;
     top: 0;
     z-index: -1;
@@ -360,51 +404,63 @@ input[type="button"] {
 
 .body-bottom-content {
     position: absolute;
-    top: 200px;
+    margin-top: 100px;
     left: 0;
+    padding-right: 250px;
 }
 
 .body-bottom-content section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
     overflow: auto;
-    background-color: #ff6b00;
+    background-color: transparent;
     color: white;
     text-align: justify;
+    font-size: 0;
+    padding: 0;
 }
 
-.body-bottom-content section img {
-    height: 200px;
-    float: right;
+.body-bottom-content section.row div {
+    display: inline-block;
+    padding: 20px;
+    background-color: #ff6b00;
+}
+
+.body-bottom-content section.row img {
+    height: 100%;
+    display: inline-block;
 }
 
 .body-bottom-content section h2 {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 700;
 }
 
 .body-bottom-content section p {
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 300;
-    padding: 5px 0px;
+    padding: 10px;
 }
 
 .body-bottom-end {
-    margin: 10px 0px;
+    margin: 0px;
     text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 480px;
 }
 
 .body-bottom-end h2 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
 }
 
 .body-bottom-end p {
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 200;
     padding: 5px 0px;
+    padding-right: 300px;
 }
 
 
@@ -412,31 +468,39 @@ input[type="button"] {
 
 .footer {
     background-color: #303030;
-    margin-top: 320px;
-    padding: 10px;
+    margin-top: 380px;
+    padding: 20px 10px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 
 .footer>div {
-    padding: 5px;
+    padding: 5px 15px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .footer>div h5 {
     color: #ff6b00;
-    font-size: 14px;
-    font-weight: 200;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 0px;
 }
 
 .footer>div li {
-    display: inline-block;
+    display: block;
+    text-align: left;
     color: white;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 500;
     padding: 5px 10px 5px 0px;
 }
 
 .footer-quote {
     padding: 5px 20px !important;
-    font-size: 8px;
+    font-size: 16px;
     color: #5a5a5a;
     text-align: center;
 }

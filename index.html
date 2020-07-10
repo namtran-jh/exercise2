@@ -11,29 +11,47 @@
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="./styles/mediumScreen.css">
     <link rel="stylesheet" media="screen and (min-width: 992px)" href="./styles/largeScreen.css">
     <link rel="stylesheet" media="screen and (min-width: 1200px)" href="./styles/extraLargeScreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 1900px)" href="./styles/superExtraLargeScreen.css">
     <title>Exercise 2</title>
 </head>
 
 <body>
     <!-- Header -->
-    <div class="row header">`
+    <div class="row header">
         <img class="img-headerBackground col-12" src="./images/header-background.png" alt="img-headerBackground" />
         <div class="navbar-mobile">
-            <p>&equiv;</p>
-            <p>TRA<span class="text-decor-direc">N</span>S</p>
+            <p class="menu-icon">&equiv;</p>
+            <p>TRA<span id="text-decor-direc">N</span>S</p>
+            <ul class="menu-nav">
+                <li>ABOUT</li>
+                <li>PRODUCTS</li>
+                <li>PROJECTS</li>
+                <li>CONTACT</li>
+            </ul>
         </div>
-        <hr>
-        <h1>SLEEK AS FKUC</h1>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aut hic ducimus tenetur, accusamus dignissimos error dolorum harum maxime eligendi minima fugiat</h4>
-        <hr class="bright-line">
-        <hr>
+        <div class="navbar">
+            <ul class="nav">
+                <li>ABOUT</li>
+                <li>PRODUCTS</li>
+                <li>PROJECTS</li>
+                <li>CONTACT</li>
+            </ul>
+            <p>TRA<span id="text-decor-direc">N</span>S</p>
+        </div>
+        <div class="header-main">
+            <hr>
+            <h1>SLEEK AS FKUC</h1>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aut hic ducimus tenetur, accusamus dignissimos error dolorum harum maxime eligendi minima fugiat</h4>
+            <hr class="bright-line">
+            <hr>
+        </div>
         <div class="arrow-link">
             <a class="arrow arrow-down" href="#footer"></a>
             <a class="arrow arrow-right" href="#"></a>
         </div>
-        <div class="header-body">
-            <img class="img-header" src="./images/header-body.png" alt="img-header" />
-            <div>
+        <div class="row header-body">
+            <img class="col-8 img-header" src="./images/header-body.png" alt="img-header" />
+            <div class="col-4">
                 <h2>BRIGHT ASS ORANGE</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum amet doloremque error ipsam.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quidem quibusdam soluta ipsum molestiae accusantium ad ex, eveniet eos repellat laudantium quo!</p>
@@ -41,24 +59,27 @@
         </div>
     </div>
     <div class="row header-bottom">
-        <h2>FINALY A LAYOUT THAT <br/> BLOWS YOUR HEAD OFF</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero repellendus, reprehenderit fuga, fugit ullam ducimus laboriosam magni rerum delectus totam.</p>
-        <div>
-            <img src="./images/twitter.png" alt="tweet" />
-            <p>Tweet this shit</p>
+        <div class="col-4 block"></div>
+        <div class="col-8 header-bottom-detail">
+            <h2>FINALY A LAYOUT THAT <br/> BLOWS YOUR HEAD OFF</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet vero repellendus, reprehenderit fuga, fugit ullam ducimus laboriosam magni rerum delectus totam.</p>
+            <div>
+                <img src="./images/twitter.png" alt="tweet" />
+                <p>Tweet this shit</p>
+            </div>
         </div>
     </div>
     <div class="header-content">
         <h2>MELBOURNE, AUSTRALIA</h2>
         <div class="row header-content-detail">
-            <div class="col-6">
+            <div class="col-sm-6 col-6">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam amet illum fuga numquam. Quia quis, quo minus dolor beatae id qui. Fugiat deleniti repellendus soluta similique corporis excepturi nesciunt unde! Lorem ipsum dolor sit
                     amet, consectetur adipisicing elit. Voluptatum, amet odit voluptate mollitia sed animi nam ipsum! Aliquam, consequuntur earum repellendus molestiae laborum aut nihil dolorem? Vero libero quod reiciendis.</p>
                 <p>Consectetur adipisicing elit. Deserunt similique reiciendis in accusantium odit autem quasi necessitatibus molestiae sed, earum, repudiandae ipsam dignissimos adipisci. Repudiandae, ullam! Consectetur tempora eos eligendi. Lorem ipsum
                     dolor sit amet, consectetur adipisicing elit. Soluta placeat in reiciendis vero iusto porro natus, dolor fuga eos ducimus ipsam rerum cum, earum, consequuntur quod quia aspernatur laborum necessitatibus. Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit. Aliquid, tempora velit. Molestiae officiis necessitatibus aut earum consequatur quae assumenda? Illo aperiam hic sint placeat dolor aliquam fuga repellat cupiditate quam?</p>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6 col-6">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque maxime aliquam at distinctio cumque repellendus sint sunt, dicta ea praesentium ad nihil voluptate magnam, nostrum et quos rerum dolores similique. Lorem ipsum dolor
                     sit, amet consectetur adipisicing elit. Suscipit soluta deserunt debitis, dolor aliquam dolores, nobis ab omnis magnam ullam quod maxime, ea sunt odio? Nesciunt minus itaque quidem vero.</p>
                 <p>Dolor sit amet consectetur adipisicing elit. Quos itaque inventore laudantium aspernatur suscipit corrupti ipsum dolorem sequi praesentium expedita adipisci, officiis mollitia voluptate quod. Dignissimos eaque esse error quidem? Lorem
@@ -69,8 +90,118 @@
     </div>
 
     <!-- Body -->
+    <div class="row body">
+        <img class="col-12 img-bodyBackground" src="./images/body-background.png" alt="img-backgroundBody" />
+        <div class="row body-body">
+            <img class="col-6 img-body" src="./images/body-body.png" alt="img-body" />
+            <h2 class="col-3">WORDS & SUCH</h2>
+        </div>
+    </div>
+    <div class="row body-content">
+        <div class="col-sm-6 col-6">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate nostrum quia tempora ut quibusdam voluptatem. Tenetur ducimus porro quisquam veniam nihil fugit aperiam eligendi, pariatur delectus quam, quas fugiat incidunt. Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Corrupti recusandae temporibus voluptate, fugit aperiam eligendi corporis tempora nisi architecto, iure, doloribus impedit voluptatem! Officia amet consequatur sequi provident unde exercitationem.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero consequuntur, voluptatum temporibus architecto necessitatibus soluta maiores laboriosam, rerum placeat tempore ducimus sapiente. Eligendi ad accusamus adipisci dicta iure praesentium
+                reiciendis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quae veritatis perferendis quidem, omnis nemo ullam esse dolorem consequatur est repudiandae repellat enim optio ipsum quibusdam debitis, laboriosam similique.
+                Velit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe atque cumque eaque id assumenda perferendis animi, minima beatae amet vel, explicabo corrupti? Exercitationem ipsam nisi dolorum, obcaecati incidunt possimus libero.</p>
+        </div>
+        <div class="col-sm-6 col-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae inventore consectetur soluta iste ullam beatae ipsum unde dicta dolores. Distinctio, atque. Unde libero rem adipisci magnam nihil laudantium quia error. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Esse sunt, modi consequuntur corporis nam repellat voluptatem officia eius sint deserunt ad, ex perferendis, aperiam obcaecati placeat quibusdam id in sapiente?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aspernatur, sapiente numquam repellat nihil atque perspiciatis, voluptatem tempora ipsa repudiandae quidem veritatis quia doloribus ad explicabo et sequi nisi unde?</p>
+        </div>
+    </div>
+    <div class="row body-form">
+        <h2 class="col-12">TAKE ACTION</h2>
+        <div class="col-12">
+            <form class="row">
+                <input class="col-2" type="text" placeholder="Name" />
+                <input class="col-2" type="text" placeholder="Contact Phone" />
+                <input class="col-3" type="email" placeholder="Email" />
+                <input class="col-2" type="button" value="Sign Up" />
+            </form>
+        </div>
+    </div>
+    <div class="row body-bottom">
+        <img class="col-12 img-bodyBottom" src="./images/body-bottom-background.png" alt="img-bodyBottom-background" />
+        <div class="body-bottom-content">
+            <section class="row">
+                <div class="col-4">
+                    <h2>OHH THIS NICE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quia, quasi perspiciatis aliquam nulla laboriosam vel enim earum minima rerum placeat voluptates magni doloribus nobis illo consequuntur nesciunt ducimus eligendi.</p>
+                    <p>Tempore, molestias, labore natus neque accusamus incidunt rem veniam cumque cum aut animi fugiat? Ipsam eius, quidem sit at quam quod ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, tenetur quam! Architecto
+                        reprehenderit illum fugiat repellat ratione? Ab velit dicta porro qui, laborum quaerat architecto culpa sed, minima, expedita molestias.</p>
+                </div>
+                <img class="col-6" src="./images/body-bottom-body.png" alt="img-bodyBottom-body" />
+            </section>
+            <div class="body-bottom-end">
+                <h2>THE END IS NIGH, WELL THE FOOTER ANYWAYS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque ut, in sapiente natus magnam reprehenderit.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
+    <div id="footer" class="row footer">
+        <div class="col-2">
+            <h5>Quicklinks</h5>
+            <ul>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <h5>Our Profile</h5>
+            <ul>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <h5>Information</h5>
+            <ul>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <h5>Courses</h5>
+            <ul>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <h5>Publication</h5>
+            <ul>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+                <li>A Footer Link</li>
+            </ul>
+        </div>
+        <div class="col-12 footer-quote">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam fugit similique ab maiores, iusto odio tenetur sint voluptate.
+        </div>
+    </div>
 </body>
 
 </html>
