@@ -11,7 +11,7 @@ html {
 
 .header {
     position: relative;
-    color: white;
+    color: #ffffff;
 }
 
 .img-headerBackground {
@@ -30,7 +30,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(70, 70, 70);
-    color: white;
+    color: #ffffff;
     padding: 10px;
     font-size: 20px;
     font-weight: 500;
@@ -57,7 +57,7 @@ html {
 }
 
 .menu-nav li:hover {
-    background-color: white;
+    background-color: #ffffff;
     color: rgb(36, 36, 36)
 }
 
@@ -104,7 +104,7 @@ input[type="checkbox"]:checked~.menu-nav {
 }
 
 hr.bright-line {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .arrow-link {
@@ -121,7 +121,7 @@ hr.bright-line {
 }
 
 .arrow-down {
-    background: url("../images/arrow-down-white.png") center no-repeat;
+    background: url("../images/arrow-down-#ffffff.png") center no-repeat;
     background-size: 15px;
 }
 
@@ -136,7 +136,7 @@ hr.bright-line {
 }
 
 .arrow-right:hover {
-    background: url("../images/arrow-right-white.png") center no-repeat;
+    background: url("../images/arrow-right-#ffffff.png") center no-repeat;
     background-size: 15px;
 }
 
@@ -176,7 +176,7 @@ hr.bright-line {
 .header-bottom {
     padding: 10px 30px;
     text-align: center;
-    color: black;
+    color: #000000;
 }
 
 .block {
@@ -222,7 +222,7 @@ hr.bright-line {
 .header-content {
     padding: 10px;
     margin: 0px 0px 10px;
-    color: black;
+    color: #000000;
     text-align: center;
 }
 
@@ -270,7 +270,7 @@ hr.bright-line {
     word-wrap: break-word;
     font-size: 18px;
     font-weight: 300;
-    color: white;
+    color: #ffffff;
     background-color: #ff6b00;
     padding: 20px 10px 0px;
 }
@@ -284,13 +284,13 @@ hr.bright-line {
     padding: 5px 10px;
     text-align: justify;
     font-size: 8px;
-    color: white;
+    color: #ffffff;
 }
 
 .body-form {
     padding: 10px;
     background-color: rgb(70, 70, 70);
-    color: white;
+    color: #ffffff;
 }
 
 .body-form h2 {
@@ -316,9 +316,9 @@ hr.bright-line {
 
 input[type="button"] {
     width: 100px !important;
-    color: white;
+    color: #ffffff;
     background-color: rgb(70, 70, 70);
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     text-align: center !important;
 }
 
@@ -347,7 +347,7 @@ input[type="button"] {
     padding: 10px;
     overflow: auto;
     background-color: #ff6b00;
-    color: white;
+    color: #ffffff;
     text-align: justify;
 }
 
@@ -404,7 +404,7 @@ input[type="button"] {
 
 .footer>div li {
     display: inline-block;
-    color: white;
+    color: #ffffff;
     font-size: 12px;
     font-weight: 500;
     padding: 5px 10px;

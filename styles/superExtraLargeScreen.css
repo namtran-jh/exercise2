@@ -55,7 +55,7 @@ html {
 
 .header {
     position: relative;
-    color: white;
+    color: #ffffff;
     height: 600px;
 }
 
@@ -140,7 +140,7 @@ html {
 }
 
 hr.bright-line {
-    background-color: white;
+    background-color: #ffffff;
     display: block;
 }
 
@@ -159,7 +159,7 @@ hr.bright-line {
 }
 
 .arrow-down {
-    background: url("../images/arrow-down-white.png") center no-repeat;
+    background: url("../images/arrow-down-#ffffff.png") center no-repeat;
     background-size: 30px;
 }
 
@@ -174,7 +174,7 @@ hr.bright-line {
 }
 
 .arrow-right:hover {
-    background: url("../images/arrow-right-white.png") center no-repeat;
+    background: url("../images/arrow-right-#ffffff.png") center no-repeat;
     background-size: 30px;
 }
 
@@ -217,7 +217,7 @@ hr.bright-line {
     margin: 0px;
     padding: 0px 0px 10px 650px;
     text-align: left;
-    color: black;
+    color: #000000;
     font-size: 0;
 }
 
@@ -245,7 +245,7 @@ hr.bright-line {
 
 .header-bottom-detail {
     font-size: 10px;
-    color: black;
+    color: #000000;
     padding: 0px 80px 0px 30px;
     display: inline-block;
 }
@@ -271,7 +271,7 @@ hr.bright-line {
 .header-content {
     padding: 10px 200px;
     margin: 10px 0px;
-    color: black;
+    color: #000000;
     text-align: left;
 }
 
@@ -334,7 +334,7 @@ hr.bright-line {
     word-wrap: break-word;
     font-size: 30px;
     font-weight: 400;
-    color: white;
+    color: #ffffff;
     background-color: #ff6b00;
     padding: 50px 40px 0px;
 }
@@ -362,7 +362,7 @@ hr.bright-line {
     margin-left: 300px;
     padding: 20px;
     background-color: rgb(70, 70, 70);
-    color: white;
+    color: #ffffff;
 }
 
 .body-form h2 {
@@ -392,9 +392,9 @@ input[type="email"] {
 
 input[type="button"] {
     width: 150px;
-    color: white;
+    color: #ffffff;
     background-color: rgb(70, 70, 70);
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     text-align: center !important;
 }
 
@@ -424,7 +424,7 @@ input[type="button"] {
     justify-content: flex-start;
     overflow: auto;
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     text-align: justify;
     font-size: 0;
     padding: 0;
@@ -502,7 +502,7 @@ input[type="button"] {
 .footer>div li {
     display: block;
     text-align: left;
-    color: white;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 400;
     padding: 5px 10px 5px 0px;
