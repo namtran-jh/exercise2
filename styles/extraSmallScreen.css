@@ -34,6 +34,9 @@ html {
     padding: 10px;
     font-size: 20px;
     font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .menu-nav {
@@ -41,12 +44,16 @@ html {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
+    margin-top: 45px;
     background-color: rgb(36, 36, 36);
+    width: 100%;
+    text-align: center;
 }
 
 .menu-nav li {
-    padding: 15px 10px;
-    font-size: 12px;
+    padding: 20px 10px;
+    font-size: 15px;
 }
 
 .menu-nav li:hover {
@@ -54,7 +61,11 @@ html {
     color: rgb(36, 36, 36)
 }
 
-.menu-icon:hover~.menu-nav {
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked~.menu-nav {
     display: block;
 }
 
@@ -71,7 +82,6 @@ html {
 }
 
 .header-main {
-    margin: 30px 0px 0px;
     text-align: center;
 }
 
@@ -139,7 +149,8 @@ hr.bright-line {
 }
 
 .header-body {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
     position: static;
     font-size: 0;
 }
@@ -210,7 +221,7 @@ hr.bright-line {
 
 .header-content {
     padding: 10px;
-    margin: 10px 0px;
+    margin: 0px 0px 10px;
     color: black;
     text-align: center;
 }
@@ -265,7 +276,6 @@ hr.bright-line {
 }
 
 .body-content {
-    margin-left: 40px;
     padding: 10px;
     background-color: #ff6b00;
 }
@@ -273,12 +283,11 @@ hr.bright-line {
 .body-content p {
     padding: 5px 10px;
     text-align: justify;
-    font-size: 6px;
+    font-size: 8px;
     color: white;
 }
 
 .body-form {
-    margin-left: 40px;
     padding: 10px;
     background-color: rgb(70, 70, 70);
     color: white;
@@ -314,7 +323,6 @@ input[type="button"] {
 }
 
 .body-bottom {
-    margin-left: 40px;
     height: 165px;
     position: relative;
 }
@@ -360,7 +368,7 @@ input[type="button"] {
 }
 
 .body-bottom-end {
-    margin: 10px 0px;
+    margin: 10px;
     text-align: left;
 }
 
