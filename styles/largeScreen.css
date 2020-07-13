@@ -155,7 +155,7 @@ hr.bright-line {
 }
 
 .arrow-down {
-    background: url("../images/arrow-down-#ffffff.png") center no-repeat;
+    background: url("../images/arrow-down-white.png") center no-repeat;
     background-size: 22px;
 }
 
@@ -170,7 +170,7 @@ hr.bright-line {
 }
 
 .arrow-right:hover {
-    background: url("../images/arrow-right-#ffffff.png") center no-repeat;
+    background: url("../images/arrow-right-white.png") center no-repeat;
     background-size: 22px;
 }
 
