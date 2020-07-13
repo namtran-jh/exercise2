@@ -391,7 +391,7 @@ input[type="email"] {
 }
 
 input[type="button"] {
-    width: 150px;
+    width: 250px !important;
     color: #ffffff;
     background-color: rgb(70, 70, 70);
     border: 1px solid #ffffff;
