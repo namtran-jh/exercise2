@@ -56,7 +56,7 @@ html {
 .header {
     position: relative;
     color: #ffffff;
-    height: 600px;
+    height: 100vh;
 }
 
 .img-headerBackground {
@@ -190,7 +190,7 @@ hr.bright-line {
     right: 0;
     bottom: 0;
     font-size: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .header-body div {
@@ -266,6 +266,26 @@ hr.bright-line {
     text-decoration: underline;
     margin: 0;
     padding: 0px 5px;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 180px;
+    background-color: rgb(70, 70, 70);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    /* left: 100px; */
+    top: 25px;
+    z-index: 1;
 }
 
 .header-content {
@@ -390,12 +410,8 @@ input[type="email"] {
     text-align: left;
 }
 
-input[type="button"] {
-    width: 250px !important;
-    color: #ffffff;
-    background-color: rgb(70, 70, 70);
-    border: 1px solid #ffffff;
-    text-align: center !important;
+.body-form button[type="button"] {
+    font-size: 20px;
 }
 
 .body-bottom {

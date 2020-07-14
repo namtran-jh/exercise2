@@ -57,6 +57,12 @@ html {
     position: relative;
     color: #ffffff;
     height: 600px;
+    /* Parallax effect */
+    background-image: url("../images/header-background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img-headerBackground {
@@ -262,6 +268,29 @@ hr.bright-line {
     padding: 0px 5px;
 }
 
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(70, 70, 70);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    /* left: 100px; */
+    top: 20px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
 .header-content {
     padding: 10px 100px;
     margin: 10px 0px;
@@ -300,6 +329,12 @@ hr.bright-line {
 .body {
     position: relative;
     height: 420px;
+    /* Parallax effect */
+    background-image: url("../images/body-background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img-bodyBackground {
@@ -380,12 +415,8 @@ hr.bright-line {
     text-align: left;
 }
 
-input[type="button"] {
-    width: 100px !important;
-    color: #ffffff;
-    background-color: rgb(70, 70, 70);
-    border: 1px solid #ffffff;
-    text-align: center !important;
+.body-form button[type="button"] {
+    font-size: 12px;
 }
 
 .body-bottom {
